@@ -38,36 +38,6 @@ namespace Exchange_charts
             charts_quantity = 100;
         }
 
-        //private void Display()
-        //{
-        //    chart.Series.Clear();
-        //    chart.ChartAreas.Clear();
-        //    chart.Legends.Clear();
-        //    for (int i = 0; i < diagramsListBox.Items.Count; i++)
-        //    {
-        //        if (diagramsListBox.GetItemChecked(i))
-        //        {
-        //            var are = "Area" + i.ToString();
-        //            var ser = "Serie" + i.ToString();
-        //            var leg = "Legend" + i.ToString();
-
-        //            chart.ChartAreas.Add(are);
-        //            chart.Series.Add(ser);
-        //            chart.Legends.Add(leg);
-
-        //            chart.Series[ser].ChartArea = are;
-        //            chart.Series[ser].Legend = leg;
-        //            chart.Legends[leg].DockedToChartArea = are;
-        //            chart.Legends[leg].IsDockedInsideChartArea = false;
-
-        //            for (int j = 0; j < charttest.Count; j++)
-        //            {
-        //                chart.Series["Serie" + i.ToString()].Points.AddXY(j, charttest[j].high);
-        //            }
-        //        }
-        //    }
-        //}
-
         private void Add_chart_Click(object sender, EventArgs e)
         {
             diagrams.Add(new Diagram(TEST_CHART_DATA));
@@ -118,12 +88,6 @@ namespace Exchange_charts
         {
             Ddata = list;
             Dchart = new Chart();
-
-            //var series = new Series("series1");
-            //for (int i = 0; i < list.Count; i++)
-            //    series.Points.AddXY(i, list[i].high);
-
-            //Dchart.Series.Add(series);
 
             var are = "Area1";
             var ser = "Series1";
